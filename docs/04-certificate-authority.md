@@ -34,11 +34,11 @@ API_SERVICE=$(echo $SERVICE_CIDR | awk 'BEGIN {FS="."} ; { printf("%s.%s.%s.1", 
 Check that the environment variables are set. Run the following:
 
 ```bash
-echo $CONTROL01
-echo $CONTROL02
-echo $LOADBALANCER
-echo $SERVICE_CIDR
-echo $API_SERVICE
+echo ControlPlane01: $CONTROL01
+echo ControlPlane02: $CONTROL02
+echo LoadBalancer: $LOADBALANCER
+echo Service CIDR: $SERVICE_CIDR
+echo API Service: $API_SERVICE
 ```
 
 The output should look like this with one IP address per line. If you changed any of the defaults mentioned in the [prerequisites](./01-prerequisites.md) page, then addresses may differ. The first 3 addresses will also be different for Apple Silicon on Multipass (likely 192.168.64.x).
