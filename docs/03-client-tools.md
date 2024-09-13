@@ -43,6 +43,10 @@ ssh-copy-id -o StrictHostKeyChecking=no $(whoami)@node02
 
 For each host, the output should be similar to this. If it is not, then you may have entered an incorrect password. Retry the step.
 
+```
+Number of key(s) added: 1
+```
+
 
 In my personal attempt, I configured the hosts in the /etc/hosts file for each of the VMs:
 
@@ -50,9 +54,7 @@ In my personal attempt, I configured the hosts in the /etc/hosts file for each o
 
 And as I was getting an error with the ssh-copy-id , I appended manually the content of the ~/.ssh/authorized_keys in the controlplane01 to the same folder and file in each of the other VMs.
 
-```
-Number of key(s) added: 1
-```
+
 
 Verify connection
 
