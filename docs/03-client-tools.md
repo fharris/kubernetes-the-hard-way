@@ -83,6 +83,11 @@ We will be using `kubectl` early on to generate `kubeconfig` files for the contr
 
 The environment variable `ARCH` is pre-set during VM deployment according to whether using VirtualBox (`amd64`) or Apple Silicon (`arm64`) to ensure the correct version of this and later software is downloaded for your machine architecture.
 
+In my case I had to explicitly create and assign a value to the environment variable `ARCH`:
+
+![image](https://github.com/user-attachments/assets/4baf0b78-891f-4814-8625-b171515a7945)
+
+
 ### Linux
 
 ```bash
