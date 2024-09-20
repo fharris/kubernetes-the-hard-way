@@ -67,6 +67,11 @@ Each etcd member must have a unique name within an etcd cluster. Set the etcd na
 ETCD_NAME=$(hostname -s)
 ```
 
+```bash
+PRIMARY_IP=127.0.1.1
+```
+
+
 Create the `etcd.service` systemd unit file:
 
 ```bash
